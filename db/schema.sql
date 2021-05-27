@@ -1,0 +1,24 @@
+DROP DATABASE IF EXISTS ems_DB;
+CREATE database ems_DB;
+
+USE ems_DB;
+
+CREATE TABLE department (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE role (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(30) NOT NULL,
+  salary DECIMAL NOT NULL,
+  
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE department (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30),
+  PRIMARY KEY (id)
+);
